@@ -5,8 +5,11 @@
 }
 
 body {
+	margin: 0;
 	font-family: 'Montserrat', sans-serif;
 }
+
+/* bagian1 */
 
 .bagian1 {
 	margin: 80px 80px 80px 80px;
@@ -81,3 +84,146 @@ body {
 .text2 {
 	padding-left: 25px;
 }
+
+/* bagian2 */
+
+.container {
+  margin: 0 80px 0 80px;
+}
+
+.faculty-wrapper {
+  height: 800px;
+  padding-bottom: 80px;
+  text-align: center;
+  margin-bottom: 250px;
+}
+
+.row {
+	display: flex;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.heading-left{
+  flex-wrap: wrap;
+  padding: 50px;
+  color: #5f5d60;
+}
+
+.heading-left img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  background-size: auto 100%;
+}
+
+.heading-right {
+  flex-wrap: wrap;
+  line-height: 140px;
+  text-align: center;
+  padding: 50px;
+  color: #5f5d60;
+}
+
+.heading-right h1 {
+	margin: 0 auto;
+  display: inline-block;
+  line-height: normal;
+  font-size: 250%;
+  text-align: center;
+  color: #073c64;
+	border-left: 25px solid #fdcb2c;  
+}
+
+
+.heading-right p {
+	width: 550px;
+  display: inline-block;
+  line-height: normal;
+  text-align: center;
+  color:#555555;
+  padding: 25px 0 25px 0;
+}
+
+.faculty {
+  float: left;
+  width: 25%;
+  height: auto;
+  margin: 25px 0px 50px 0px;
+  
+}
+
+
+.txt-contents {
+  padding: 40px 20px 40px 20px;
+  height: 155px;
+  font-size:12px;
+  text-align: center;
+  color:#555555;
+}
+
+.faculty-heading h3{
+  position: relative;
+  font-size: 20px;
+  color: #073c64;
+}
+
+.menu {
+  list-style: none inside;
+  padding: 0;
+  margin: 0px 10px 0px 10px;
+  text-align: center;
+}
+
+.menu li {
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background: #073c64;
+}
+
+.menu li a {
+  display: block;
+  padding: 0;
+  font-size: 14px;
+  text-decoration: none;
+  width: 100%; 
+  line-height: 35px;
+  color: #ffffff;
+}
+
+.menu li li a {
+  font-size: 12px;
+  text-align: center;
+}
+
+.menu li:hover {
+  background: #fdcb2c;
+}
+
+.menu a:hover {
+  color: #1a2c43;
+  font-weight: bold;
+}
+
+.menu ul {
+  position: absolute;
+  padding: 0;
+  left: 0;
+  display: none;
+}
+
+.menu li:hover ul ul {
+  display: none;
+  width: 100%;
+}
+
+.menu li:hover ul {
+  display: block;
+  width: 100%;
+} 
