@@ -58,7 +58,7 @@ body {
 .text {
 	display: flex;
 	flex-wrap: wrap;
-	background: url('gambar/background11.png') no-repeat,
+	background: url('gambar/back.png') no-repeat,
     radial-gradient(
       circle farthest-corner at 6.6% 12%,
       rgba(255, 203, 44, 1) 20.8%,
