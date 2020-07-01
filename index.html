@@ -11,9 +11,24 @@
 		<title>Universitas Gadjah Mada</title>
 	</head>
 	<body>
+		<!-- header - Whildan Rizqi Yohatam -->
+		<header>
+	      	<div class="header">
+		        <img class="ugm-logo"src="https://web23.opencloud.dssdi.ugm.ac.id/wp-content/uploads/sites/1049/2018/02/Simbol-Logo-Blok-300x300.png">
+		        <h2>Universitas Gadjah Mada</h2>
+	      	</div>
+	        <div class="header-list" id="navbar">
+	          <ul class="nav">
+	          	<li><a href="#tentang" class="border-right">Tentang</a></li>
+			    <li><a href="#sejarah" class="border-right">Sejarah</a></li>
+			    <li><a href="#pendidikan">Pendidikan</a></li>
+	          </ul>
+	        </div>
+	    </header>
+
 		<!-- bagian utama 1 - Nurul Qofifah Audyningrum -->
 		<div class="bagian1">
-			<div class="perkenalan">
+			<div class="perkenalan" id="tentang">
 				<div class="judul">
 					<h1 data-aos="fade-right">Universitas Gadjah Mada</h1>
 				</div>
@@ -24,7 +39,7 @@
 			</div>
 
 			<div class="sejarah" id="sejarah">
-				<h1 data-aos="fade-right">Sejarah Universitas Gadjah Mada</h2>
+				<h1 data-aos="fade-right">Sejarah Universitas Gadjah Mada</h1>
 				<img src="gambar/about.jpg">
 				<div class="text">
 					<p class="text1" data-aos="zoom-in">Universitas Gadjah Mada lahir dari kancah perjuangan revolusi kemerdekaan bangsa Indonesia. Didirikan pada periode awal kemerdekaan, UGM didaulat sebagai Balai Nasional Ilmu Pengetahuan dan Kebudayaan bagi penyelenggaraan pendidikan tinggi nasional.
@@ -46,7 +61,7 @@
 		            alt=""
 		          />
 		        </div>
-		        <div class="heading-right">
+		        <div class="heading-right" id="pendidikan">
 		          <h1 data-aos="fade-right">Pendidikan</h1>
 		          <p>UGM memiliki 18 fakultas dan 2 sekolah yang menyelenggarakan program
 		            sarjana, pascasarjana, profesi, spesialis, diploma, serta program
@@ -274,9 +289,25 @@
 	        </div>
 	        <p class="copyright">&copy; 2020 Kelompok C06 - Progate & UGM </p>
 	    </footer>
+
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script>
 		  AOS.init();
+		</script>
+
+		<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+		    navbar.classList.add("sticky")
+		  } else {
+		    navbar.classList.remove("sticky");
+		  }
+		}
 		</script>
 	</body>
 </html>
