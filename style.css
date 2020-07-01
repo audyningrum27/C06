@@ -1,0 +1,83 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.bagian1 {
+	margin: 80px 80px 80px 80px;
+}
+
+.judul h1 {
+	color: #073c64;
+	font-weight: 900;
+	font-size: 250%;
+	padding: 10px 0 10px 0;
+	border-left: 25px solid #fdcb2c;
+}
+
+.isi {
+	margin: 50px 0 100px 0;
+	display: flex;
+	background-color: #073c64;
+	border-radius: 0 150px 0 150px;
+	border-left: 25px solid #fdcb2c;
+}
+
+.isi p {
+	color: white;
+	font-size: 20px;
+	text-align: justify;
+	width: 800px;
+	padding: 110px 80px 110px 60px;
+	line-height: 40px;
+}
+
+.isi img {
+	width: 75%;
+	border-radius: 0 150px 0 0;
+}
+
+.sejarah h1 {
+	color: #073c64;
+	border-left: 25px solid #fdcb2c;
+}
+
+.sejarah img {
+	align-items: center;
+	justify-content: center;
+	display: block;
+	margin: 0 auto;
+	padding: 10px 0 25px 0;
+}
+
+.text {
+	display: flex;
+	flex-wrap: wrap;
+	background: url('gambar/background11.png') no-repeat,
+    radial-gradient(
+      circle farthest-corner at 6.6% 12%,
+      rgba(255, 203, 44, 1) 20.8%,
+      rgba(0, 0, 0, 0) 100.2%
+    );
+    background-size: cover;
+}
+
+.text p {
+	width: 50%;
+	text-align: justify;
+	line-height: 25px;
+	color: #555555;
+}
+
+.text1 {
+	padding-right: 25px;
+}
+
+.text2 {
+	padding-left: 25px;
+}
